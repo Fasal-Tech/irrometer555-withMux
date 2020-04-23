@@ -1,4 +1,4 @@
-# irrometer-555withMux
+# Watermark irrometer-555withMux
 This repository contains the PCB design files to interface the popular Irrometer 200SS soil moisture sensor and read the equivalent soil tension in Frequency.
 
 The RT9193-33GB IC is an LDO used to convert 5V to 3.3V for LMC555 and 74HC4052D ICs. Using the ENABLE pin of the LDO, we can control the poweron-off of the circuit. It is a LDO with drop voltage of around 0.3V. SO your board supply VCC can go as low as 3.6V and the circuit will still function.
@@ -15,8 +15,8 @@ kPa = 100 - (Hz - 485) * 0.2174     for 485 <= Hz <= 600
 kPa = 200 - (Hz - 293) * 0.5208     for 293 <= Hz <= 485
 kPa = 200                           for Hz < 293
 ```
-<br>
-you can achieve this in the microcontroller program using "If" conditions. The conversion reference is from the datasheet of SMX circuit (https://www.emesystems.com/smx/documents/SMX_2018.pdf)
+
+You can achieve this in the microcontroller program using "If" conditions. The conversion reference is from the datasheet of SMX circuit (https://www.emesystems.com/smx/documents/SMX_2018.pdf)
 
 The attached Arduino code is tested successfully with ATmega328p and STM32F103 microcontrollers. Same can be adapted to PIC controllers and others as well.
 
