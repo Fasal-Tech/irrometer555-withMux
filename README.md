@@ -20,6 +20,8 @@ You can achieve this in the microcontroller program using "If" conditions. The c
 
 The attached Arduino code is tested successfully with ATmega328p and STM32F103 microcontrollers. Same can be adapted to PIC controllers and others as well.
 
+Read more here - https://medium.com/fasal-engineering/a-low-cost-circuit-to-read-from-multiple-watermark-irrometer-200ss-sensors-a4c838da233a
+
 # Liscense
 MIT 
 
